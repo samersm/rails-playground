@@ -1,7 +1,13 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>home Page</h1>
+<p>Find the list of all pages and projects</p>
 
-<div class="well text-center">
-    <!--<h1>test</h1>-->
-    <%= link_to 'High Score', high_scores_path %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <%= link_to 'High Score', high_scores_path, class: 'btn btn-primary' %>
+        </div>
+        <div class="col-md-2">
+            <%= link_to 'High Score', high_scores_path, class: 'btn btn-primary' %>
+        </div>
+    </div>
 </div>
