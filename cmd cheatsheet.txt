@@ -1,0 +1,45 @@
+Rails Commands Cheatsheet
+
+* rails -h (to show all command lines)
+    
+* gem install rails
+
+* rails new name
+
+* bundle install
+
+* bundle check
+
+* rails routes
+
+* cd rails-projects/saasapp/
+
+* rails s -b $IP -p $PORT
+
+* rails c -h (for show all command lines)
+
+* rails c       -       rails c -s
+        Hirb.enable (related to hirb gem)
+        Contact.all
+
+* rails g migrate UserProfiles
+
+* rails g controller Users show
+
+* rails g paperclip profile avatar
+
+* git branch (To view the list of your branches)
+
+* git checkout -b new_branch
+
+* git status
+
+* git add .
+
+* git commit -m "your commit"
+
+* git push
+
+* heroku domains
+
+* git push -f heroku master
