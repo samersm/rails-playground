@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :messages
   root to: 'pages#home'
 
   resources :high_scores
