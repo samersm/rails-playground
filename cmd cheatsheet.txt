@@ -42,6 +42,8 @@ Rails Commands Cheatsheet
 
 * git push
 
+* git reset --hard HEAD (To revert to a previous commit, ignoring any changes)
+
 * heroku domains
 
 * git push -f heroku master

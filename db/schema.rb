@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170123122533) do
+ActiveRecord::Schema.define(version: 20170125133151) do
 
   create_table "high_scores", force: :cascade do |t|
     t.string   "game"
@@ -31,6 +31,26 @@ ActiveRecord::Schema.define(version: 20170123122533) do
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "publications", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "publication_type_id"
+    t.integer  "publisher_id"
+    t.string   "publisher_type"
+    t.boolean  "single_issue"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.index ["publication_type_id"], name: "index_publications_on_publication_type_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

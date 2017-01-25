@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :users
+  resources :publications
   resources :messages
   root to: 'pages#home'
 
