@@ -12,7 +12,11 @@
  *
  *= require_tree .
  *= require_self
+ *= require dataTables/jquery.dataTables
+ *= require dataTables/bootstrap/2/jquery.dataTables.bootstrap
+ 
  */
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
