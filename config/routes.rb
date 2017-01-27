@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'pages/about'
+
+  get 'pages/contact'
+
   resources :users
   resources :publications
   resources :messages
